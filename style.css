@@ -6,9 +6,9 @@
 }
 
 :root {
-  --mostrando: silver;
-  --esperando: gray;
-  --flotando: black;
+  --mostrando: #b8574b;
+  --esperando:#4dd456;
+  --flotando: purple;
 }
 
 body{
@@ -26,7 +26,7 @@ body{
     height:auto;
     padding: 1rem;
     margin: auto;
-    background: #3ce840;
+    background: #278022;
     border-radius: .5rem;
     z-index: 9998;
 }

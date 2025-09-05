@@ -22,7 +22,7 @@
                 <a href="page-1.html">Primera interior</a> 
                 <a href="page-2.html" class="active">Segunda interior</a>
             </nav>
-            <p>En la segunda página interior puedes ver cómo adapto <a href="https://p5js.org/examples/" target="_blank">un ejemplo</a> de p5.js a página completa. El ejemplo se llama [completar con lo que corresponda]</p>
+            <p>En la segunda página interior puedes ver cómo adapto <a href="https://p5js.org/examples/" target="_blank">un ejemplo</a> de p5.js a página completa. El ejemplo se llama Dibujando Líneas</p>
         </main>
         <script>
         var canvas;
@@ -35,7 +35,10 @@
         }
 
         function draw() {
-          
+          let lineHue = mouseX - mouseY;
+          strokeWeight(20);
+          stroke(lineHue, 200, 90);
+          line(pmouseX, pmouseY, mouseX, mouseY);
         }
 
         function windowResized() {
